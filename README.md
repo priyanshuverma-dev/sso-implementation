@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SSO Implementation
 
-## Getting Started
+This project is a part of the SSO (Single Sign-On) service implementation using NextAuth and Next.js.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The SSO Domain project is responsible for managing the authentication and authorization process for multiple applications within a single sign-on environment. It leverages NextAuth, a flexible authentication library for Next.js applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- Centralized authentication and authorization for multiple applications
+- Support for various authentication providers (e.g., email/password, social logins)
+- Session management and token-based authentication
+- Role-based access control (RBAC) for fine-grained authorization
+- Customizable login and registration flows
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To install and run the SSO Domain project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```shell
+   git clone https://github.com/your-username/sso-implementation.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install the dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```shell
+   cd sso-domain
+   yarn install
+   ```
+
+3. Configure the environment variables (see [Configuration](#configuration) section).
+
+4. Start the development server:
+
+   ```shell
+   yarn dev
+   ```
+
+## Usage
+
+Once the development server is running, you can access the SSO Domain application at `http://localhost:3000`. From there, you can perform various authentication and authorization operations, such as logging in, registering new users, and managing user roles.
+
+## Configuration
+
+The SSO Domain project requires the following environment variables to be set:
+
+- `NEXTAUTH_URL`: The base URL of the SSO Domain application.
+- `DATABASE_URL`: The URL of the database used for storing user information and session data.
+- `JWT_SECRET`: A secret key used for signing and verifying JSON Web Tokens (JWTs).
+- `...` (add any other required environment variables)
+
+You can set these variables either in a `.env` file or through your hosting provider's environment configuration.
+
+## Contributing
+
+Contributions to the SSO Domain project are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
+
+## License
+
+The SSO Domain project is licensed under the [MIT License](LICENSE).
