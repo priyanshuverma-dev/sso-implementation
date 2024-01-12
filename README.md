@@ -1,73 +1,55 @@
 # SSO Implementation
 
-This project is a part of the SSO (Single Sign-On) service implementation using NextAuth and Next.js.
+The SSO Implementation repository contains the implementation details and examples for seamlessly integrating the SSO Service into your applications.
 
-## Table of Contents
+## Repository Link
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-The SSO Domain project is responsible for managing the authentication and authorization process for multiple applications within a single sign-on environment. It leverages NextAuth, a flexible authentication library for Next.js applications.
+[SSO Implementation Repository](https://github.com/priyanshuverma-dev/sso-implementation)
 
 ## Features
 
-- Centralized authentication and authorization for multiple applications
-- Support for various authentication providers (e.g., email/password, social logins)
-- Session management and token-based authentication
-- Role-based access control (RBAC) for fine-grained authorization
-- Customizable login and registration flows
+### 1. Example Integrations
 
-## Installation
+   Explore comprehensive examples demonstrating how to integrate the SSO Service into various types of applications, providing a foundation for seamless authentication and authorization.
 
-To install and run the SSO Domain project locally, follow these steps:
+### 2. Usage Guidelines
 
-1. Clone the repository:
+   Clear and detailed guidelines on using the SSO Service within your applications, ensuring a smooth and secure single sign-on experience for end-users.
 
-   ```shell
-   git clone https://github.com/your-username/sso-implementation.git
-   ```
+### 3. Customization Possibilities
 
-2. Install the dependencies:
+   Learn how to customize and extend the SSO Service to fit the specific requirements of your applications. Examples include incorporating custom authentication providers and tailoring login flows.
 
-   ```shell
-   cd sso-domain
-   yarn install
-   ```
+### 4. Best Practices
 
-3. Configure the environment variables (see [Configuration](#configuration) section).
+   Access best practices for implementing SSO, including security considerations, error handling, and optimizing user experiences.
 
-4. Start the development server:
+### 5. Troubleshooting
 
-   ```shell
-   yarn dev
-   ```
+   Troubleshooting tips and common solutions to address potential issues during the integration process.
 
-## Usage
+## Getting Started
 
-Once the development server is running, you can access the SSO Domain application at `http://localhost:3000`. From there, you can perform various authentication and authorization operations, such as logging in, registering new users, and managing user roles.
+To integrate the SSO Service into your application, follow these steps:
 
-## Configuration
+1. Clone the SSO Implementation repository:
 
-The SSO Domain project requires the following environment variables to be set:
+    ```bash
+    git clone https://github.com/priyanshuverma-dev/sso-implementation.git
+    ```
 
-- `NEXTAUTH_URL`: The base URL of the SSO Domain application.
-- `DATABASE_URL`: The URL of the database used for storing user information and session data.
-- `JWT_SECRET`: A secret key used for signing and verifying JSON Web Tokens (JWTs).
-- `...` (add any other required environment variables)
+2. Explore the examples and usage guidelines provided in the repository.
 
-You can set these variables either in a `.env` file or through your hosting provider's environment configuration.
+3. Customize the integration based on your application's requirements using the customization examples.
+
+## Documentation
+
+For detailed information on using the SSO Service in your applications, refer to the [SSO Implementation Documentation](#).
 
 ## Contributing
 
-Contributions to the SSO Domain project are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
+Contributions to the SSO Implementation repository are welcome! If you would like to contribute, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
 
-The SSO Domain project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
