@@ -4,7 +4,7 @@ The SSO Implementation repository contains the implementation details and exampl
 
 ## Repository Link
 
-[SSO Implementation Repository](https://github.com/priyanshuverma-dev/sso-implementation)
+[SSO Implementation Repository](https://github.com/priyanshuverma-dev/sso-service)
 
 ## Features
 
